@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeFarm Observatory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="CodeFarm navigation">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true">CF</div>
+        <div><h1>CodeFarm</h1><p>Commercial infrastructure automation</p></div>
+      </div>
+      <nav class="nav-list">
+        <a href="#overview">Overview</a>
+        <a href="#commercial">Revenue</a>
+        <a href="#organisms">Engineers</a>
+        <a href="#quality">Quality</a>
+        <a href="#immune">Operations</a>
+      </nav>
+      <div class="sidebar-footer"><span>Root</span><strong id="rootPath">G:\codefarm</strong></div>
+    </aside>
+    <main class="workspace">
+      <header class="topbar" id="overview">
+        <div><p class="eyebrow">Observatory</p><h2 id="ecosystemStatus">Loading ecosystem</h2></div>
+        <div class="actions"><button type="button" id="refreshView" title="Re-render loaded snapshot">Refresh</button><a class="button-link" href="../metrics.json">Metrics JSON</a></div>
+      </header>
+      <section class="kpi-grid" aria-label="Core metrics">
+        <article class="metric-cell accent-green"><span>Active Engineers</span><strong id="populationValue">0</strong><small id="populationMeta">0 total records</small></article>
+        <article class="metric-cell accent-yellow"><span>Nutrient Pool</span><strong id="poolValue">0</strong><small>available calories</small></article>
+        <article class="metric-cell accent-blue"><span>Lifetime Yield</span><strong id="yieldValue">0</strong><small>calories produced</small></article>
+        <article class="metric-cell accent-red"><span>Deaths</span><strong id="deathValue">0</strong><small>last 24h</small></article>
+      </section>
+      <section class="panel" id="commercial" aria-labelledby="commercialTitle">
+        <div class="panel-head"><div><p class="eyebrow">Revenue Mode</p><h3 id="commercialTitle">Customer Value Delivered</h3></div><span id="tenantBadge" class="badge">tenant demo</span></div>
+        <div class="commercial-grid">
+          <div class="commercial-metric"><span>Automation Actions</span><strong id="autoActions">0</strong></div>
+          <div class="commercial-metric"><span>Incidents Prevented</span><strong id="incidentsPrevented">0</strong></div>
+          <div class="commercial-metric"><span>Uptime</span><strong id="uptimePct">100%</strong></div>
+          <div class="commercial-metric"><span>Est. Monthly Value</span><strong id="monthlyValue">$0.00</strong></div>
+          <div class="commercial-metric"><span>VMs Provisioned</span><strong id="vmsProvisioned">0</strong></div>
+          <div class="commercial-metric"><span>Services Deployed</span><strong id="servicesDeployed">0</strong></div>
+        </div>
+      </section>
+      <section class="dashboard-grid">
+        <section class="panel ecosystem-panel" aria-labelledby="mapTitle"><div class="panel-head"><div><p class="eyebrow">Live Map</p><h3 id="mapTitle">Automation Workforce</h3></div><span id="cycleBadge" class="badge">Cycle 0</span></div><div id="ecosystemMap" class="ecosystem-map" aria-label="Organism energy field"></div></section>
+        <section class="panel" id="quality" aria-labelledby="qualityTitle"><div class="panel-head"><div><p class="eyebrow">Verification</p><h3 id="qualityTitle">Outcome Trend</h3></div><span id="qualityBadge" class="badge">0 samples</span></div><div id="qualityChart" class="quality-chart" aria-label="Quality trend chart"></div></section>
+      </section>
+      <section class="panel" id="organisms" aria-labelledby="organismTitle">
+        <div class="panel-head"><div><p class="eyebrow">Workforce</p><h3 id="organismTitle">Engineer Roster</h3></div><span id="artifactBadge" class="badge">0 observed artifacts</span></div>
+        <div class="table-wrap"><table><thead><tr><th>ID</th><th>Status</th><th>Energy</th><th>Lifetime Value</th><th>Role</th><th>Last Quality</th><th>Last Task</th></tr></thead><tbody id="organismRows"></tbody></table></div>
+      </section>
+      <section class="dashboard-grid bottom-grid">
+        <section class="panel" id="immune" aria-labelledby="immuneTitle"><div class="panel-head"><div><p class="eyebrow">Operations</p><h3 id="immuneTitle">Alerts</h3></div></div><div id="alertList" class="alert-list"></div></section>
+        <section class="panel" aria-labelledby="logTitle"><div class="panel-head"><div><p class="eyebrow">Log</p><h3 id="logTitle">Recent Activity</h3></div></div><pre id="logOutput" class="log-output"></pre></section>
+      </section>
+    </main>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "cognition": {
+    "expertise_level": 1,
+    "specialization": "ansible",
+    "successful_improvements": [
+      "harden_security",
+      "evolve_genome",
+      "provision_vm"
+    ]
+  },
+  "energy_decay_per_cycle": 12,
+  "genome_id": "agent-ansible",
+  "reproduction": {
+    "mutation_rules": {
+      "expertise_level": "increment_or_reset",
+      "specialization": [
+        "terraform",
+        "ansible",
+        "digestive-engine",
+        "observatory",
+        "genome-bank"
+      ]
+    },
+    "traits": [
+      "specialization",
+      "expertise_level"
+    ]
+  },
+  "reproduction_threshold": 1200,
+  "starvation_threshold": 120,
+  "strain": "self-builder"
+}

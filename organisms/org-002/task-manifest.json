@@ -1,0 +1,16 @@
+{
+  "tenant": "demo",
+  "specialization": "platform",
+  "allowed_subsystems": ["k8s"],
+  "task_queue": [
+    {
+      "id": "deploy-web-tier",
+      "type": "k8s",
+      "target": "demo-staging",
+      "template": "nginx-deployment",
+      "verify": "k8s_manifest",
+      "reward": 450,
+      "customer_value": "Customer web tier is ready for container orchestration"
+    }
+  ]
+}

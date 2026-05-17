@@ -1,0 +1,11 @@
+{
+  "quality_rules": {
+    "test_pass_rate": {"weight": 0.35},
+    "code_complexity": {"weight": 0.20},
+    "documentation_coverage": {"weight": 0.15},
+    "security_score": {"weight": 0.20},
+    "style_compliance": {"weight": 0.10}
+  },
+  "base_calorie_multiplier": 10,
+  "bonus_for_innovation": 25
+}

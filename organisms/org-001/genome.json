@@ -1,0 +1,32 @@
+{
+  "cognition": {
+    "expertise_level": 1,
+    "specialization": "terraform",
+    "successful_improvements": [
+      "provision_vm",
+      "improve_digest",
+      "harden_security"
+    ]
+  },
+  "energy_decay_per_cycle": 12,
+  "genome_id": "agent-terraform",
+  "reproduction": {
+    "mutation_rules": {
+      "expertise_level": "increment_or_reset",
+      "specialization": [
+        "terraform",
+        "ansible",
+        "digestive-engine",
+        "observatory",
+        "genome-bank"
+      ]
+    },
+    "traits": [
+      "specialization",
+      "expertise_level"
+    ]
+  },
+  "reproduction_threshold": 1200,
+  "starvation_threshold": 120,
+  "strain": "self-builder"
+}

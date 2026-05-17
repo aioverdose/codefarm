@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local tools and downloaded runtimes
+tools/*
+!tools/env.bat
+!tools/bin/
+!tools/bin/ansible-playbook.cmd
+!tools/bin/ansible_playbook_windows.py
+
+# Terraform working state
+.terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+core/terraform/tfplan
+**/tfplan
+
+# Secrets and local machine material
+secrets/
+*.pem
+*.key
+*.pfx
+*.crt
+
+# Runtime logs and transient generated state
+logs/
+*.log
+*.tmp
+nutrient-pool/available/*
+nutrient-pool/consumed/*
+reports/
+
+# Generated organism outputs and test artifacts
+organisms/*/output/
+organisms/*/stomach/
+organisms/*/vitals.log
+organisms/test-org/
+
+# Proposal/runtime archives
+proposals/pending/*
+proposals/promoted/*
+proposals/quarantine/*
+!proposals/pending/.gitkeep
+!proposals/promoted/.gitkeep
+!proposals/quarantine/.gitkeep
+snapshots/*
+!snapshots/.gitkeep
+
+# Generated UI snapshot
+observatory/ui/data.js
+observatory/ui/self_building_panel.json
+observatory/metrics.json
+
+# Completed runtime tasks
+tasks/completed/
+tasks/failed/
+tasks/pending/*.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+genome-bank/evolved-strains/*
+!genome-bank/evolved-strains/.gitkeep

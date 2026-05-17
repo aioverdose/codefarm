@@ -1,0 +1,8 @@
+---
+- name: Harden SSH for customer systems
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Record SSH hardening intent
+      debug:
+        msg: "SSH hardening policy validated for CodeFarm demo"

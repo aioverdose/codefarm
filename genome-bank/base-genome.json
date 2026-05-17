@@ -1,0 +1,14 @@
+{
+  "genome_id": "base-genome",
+  "strain": "base",
+  "llm_provider": "simulated-local",
+  "temperature": 0.2,
+  "task_complexity_preference": "easy",
+  "test_strictness": 0.85,
+  "self_test": true,
+  "energy_decay_per_cycle": 8,
+  "starvation_threshold": 120,
+  "reproduction_threshold": 900,
+  "spawn_cost": 500,
+  "grace_period_seconds": 300
+}

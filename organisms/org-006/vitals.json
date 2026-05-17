@@ -1,0 +1,8 @@
+{
+  "birth_at": "2026-05-16T21:45:56.506199+00:00",
+  "last_success": true,
+  "last_task": "provision_vm",
+  "last_work": "2026-05-17T00:27:17.867804+00:00",
+  "parent": "org-001",
+  "total_outputs": 1
+}

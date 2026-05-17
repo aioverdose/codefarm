@@ -1,0 +1,8 @@
+{
+  "task_types": [
+    {"id": "algo_implementation", "description": "Implement standard algorithm", "difficulty": "easy|medium|hard", "nutrient_multiplier": 1.0, "examples": ["quicksort", "dijkstra", "regex parser"]},
+    {"id": "bug_fix", "description": "Fix provided broken code", "difficulty": "medium", "nutrient_multiplier": 1.2, "source": "genome-bank/failures/"},
+    {"id": "refactor", "description": "Improve existing codebase", "difficulty": "hard", "nutrient_multiplier": 1.5, "source": "organisms/*/output/archive/"},
+    {"id": "infrastructure", "description": "Write Terraform/Ansible for new service", "difficulty": "hard", "nutrient_multiplier": 2.0, "examples": ["load balancer", "monitoring stack", "backup system"]}
+  ]
+}

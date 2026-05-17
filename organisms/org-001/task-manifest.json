@@ -1,0 +1,16 @@
+{
+  "tenant": "demo",
+  "specialization": "provisioner",
+  "allowed_subsystems": ["terraform"],
+  "task_queue": [
+    {
+      "id": "provision-web-server",
+      "type": "terraform",
+      "target": "demo-staging",
+      "template": "nginx-ubuntu",
+      "verify": "terraform_artifact",
+      "reward": 500,
+      "customer_value": "New web server for client website"
+    }
+  ]
+}

@@ -1,0 +1,783 @@
+{
+  "autonomy_level": 2,
+  "billing": {
+    "automation_actions": 6,
+    "incidents_prevented": 2,
+    "monthly_rate": 100.6,
+    "tier": "pilot",
+    "uptime_percentage": 33.33
+  },
+  "codefarm_root": "G:\\codefarm",
+  "created_at": "2026-05-16T15:01:17.721602+00:00",
+  "cycle": 36,
+  "events": [
+    {
+      "at": "2026-05-16T18:38:42.575634+00:00",
+      "child": "org-004",
+      "event": "agent_birth",
+      "parent": "org-001",
+      "spawn_cost": 150
+    },
+    {
+      "at": "2026-05-16T21:19:25.239177+00:00",
+      "child": "org-005",
+      "event": "agent_birth",
+      "parent": "org-001",
+      "spawn_cost": 150
+    },
+    {
+      "at": "2026-05-16T21:45:56.509871+00:00",
+      "child": "org-006",
+      "event": "agent_birth",
+      "parent": "org-001",
+      "spawn_cost": 150
+    },
+    {
+      "at": "2026-05-17T00:27:17.971480+00:00",
+      "child": "org-007",
+      "event": "agent_birth",
+      "parent": "org-001",
+      "spawn_cost": 150
+    }
+  ],
+  "infrastructure": {
+    "automation_actions": 3,
+    "health_checks_failed": 4,
+    "health_checks_passed": 2,
+    "last_deployment": "2026-05-16T17:08:35.042697+00:00",
+    "services_deployed": 0,
+    "vms_provisioned": 1
+  },
+  "infrastructure_improvements": [
+    {
+      "at": "2026-05-16T17:13:58.357138+00:00",
+      "calories": 550,
+      "organism": "org-001",
+      "output_file": "G:\\codefarm\\organisms\\org-001\\output\\terraform_improvement_20260516-171358.tf",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T17:13:58.438210+00:00",
+      "calories": 400,
+      "organism": "org-002",
+      "output_file": "G:\\codefarm\\organisms\\org-002\\output\\ansible_improvement_20260516-171358.yml",
+      "subsystem": "ansible",
+      "task": "harden_security",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T17:13:58.510297+00:00",
+      "calories": 550,
+      "organism": "org-003",
+      "output_file": "G:\\codefarm\\organisms\\org-003\\output\\terraform_improvement_20260516-171358.tf",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T17:15:33.065223+00:00",
+      "calories": 475,
+      "organism": "org-001",
+      "output_file": "G:\\codefarm\\organisms\\org-001\\output\\digest_improvement_20260516-171532.py",
+      "subsystem": "digestive-engine",
+      "task": "improve_digest",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T17:15:33.124193+00:00",
+      "calories": 400,
+      "organism": "org-002",
+      "output_file": "G:\\codefarm\\organisms\\org-002\\output\\ansible_improvement_20260516-171533.yml",
+      "subsystem": "ansible",
+      "task": "harden_security",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T17:15:33.335042+00:00",
+      "calories": 475,
+      "organism": "org-003",
+      "output_file": "G:\\codefarm\\organisms\\org-003\\output\\digest_improvement_20260516-171533.py",
+      "subsystem": "digestive-engine",
+      "task": "improve_digest",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T18:38:42.016053+00:00",
+      "calories": 600,
+      "organism": "org-001",
+      "output_file": "G:\\codefarm\\organisms\\org-001\\output\\terraform_improvement_20260516-183841.tf",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T18:38:42.350816+00:00",
+      "calories": 450,
+      "organism": "org-002",
+      "output_file": "G:\\codefarm\\organisms\\org-002\\output\\ansible_improvement_20260516-183842.yml",
+      "subsystem": "ansible",
+      "task": "harden_security",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T18:38:42.547722+00:00",
+      "calories": 475,
+      "organism": "org-003",
+      "output_file": "G:\\codefarm\\organisms\\org-003\\output\\digest_improvement_20260516-183842.py",
+      "subsystem": "digestive-engine",
+      "task": "improve_digest",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T21:19:24.305963+00:00",
+      "calories": 600,
+      "organism": "org-001",
+      "output_file": "G:\\codefarm\\organisms\\org-001\\output\\terraform_improvement_20260516-211916.tf",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T21:19:24.399083+00:00",
+      "calories": 725,
+      "organism": "org-002",
+      "output_file": "G:\\codefarm\\organisms\\org-002\\output\\genome_improvement_20260516-211924.json",
+      "subsystem": "genome-bank",
+      "task": "evolve_genome",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T21:19:24.673078+00:00",
+      "calories": 475,
+      "organism": "org-003",
+      "output_file": "G:\\codefarm\\organisms\\org-003\\output\\digest_improvement_20260516-211924.py",
+      "subsystem": "digestive-engine",
+      "task": "improve_digest",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T21:19:25.154024+00:00",
+      "calories": 450,
+      "organism": "org-004",
+      "output_file": "G:\\codefarm\\organisms\\org-004\\output\\ansible_improvement_20260516-211924.yml",
+      "subsystem": "ansible",
+      "task": "harden_security",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T21:45:55.208356+00:00",
+      "calories": 0,
+      "organism": "org-001",
+      "output_file": "G:\\codefarm\\organisms\\org-001\\output\\terraform_improvement_20260516-214547.tf",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\quarantine\\org-001-provision_vm-20260516-214547-5100",
+        "status": "quarantined"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-001-provision_vm-20260516-214547-5100",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": false
+    },
+    {
+      "at": "2026-05-16T21:45:55.376593+00:00",
+      "calories": 450,
+      "organism": "org-002",
+      "output_file": "G:\\codefarm\\organisms\\org-002\\output\\ansible_improvement_20260516-214555.yml",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-002-harden_security-20260516-214555-8959",
+        "snapshot": "G:\\codefarm\\snapshots\\org-002-harden_security-20260516-214555-8959\\core\\ansible\\site.yml",
+        "status": "promoted",
+        "target": "G:\\codefarm\\core\\ansible\\site.yml"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-002-harden_security-20260516-214555-8959",
+      "subsystem": "ansible",
+      "task": "harden_security",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T21:45:55.800660+00:00",
+      "calories": 475,
+      "organism": "org-003",
+      "output_file": "G:\\codefarm\\organisms\\org-003\\output\\digest_improvement_20260516-214555.py",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-003-improve_digest-20260516-214555-9287",
+        "snapshot": "G:\\codefarm\\snapshots\\org-003-improve_digest-20260516-214555-9287\\digestive-engine\\infrastructure_digest_helpers.py",
+        "status": "promoted",
+        "target": "G:\\codefarm\\digestive-engine\\infrastructure_digest_helpers.py"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-003-improve_digest-20260516-214555-9287",
+      "subsystem": "digestive-engine",
+      "task": "improve_digest",
+      "verified": true
+    },
+    {
+      "at": "2026-05-16T21:45:56.125748+00:00",
+      "calories": 0,
+      "organism": "org-004",
+      "output_file": "G:\\codefarm\\organisms\\org-004\\output\\terraform_improvement_20260516-214555.tf",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\quarantine\\org-004-provision_vm-20260516-214555-3480",
+        "status": "quarantined"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-004-provision_vm-20260516-214555-3480",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": false
+    },
+    {
+      "at": "2026-05-16T21:45:56.481881+00:00",
+      "calories": 0,
+      "organism": "org-005",
+      "output_file": "G:\\codefarm\\organisms\\org-005\\output\\terraform_improvement_20260516-214556.tf",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\quarantine\\org-005-provision_vm-20260516-214556-7174",
+        "status": "quarantined"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-005-provision_vm-20260516-214556-7174",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": false
+    },
+    {
+      "at": "2026-05-17T00:27:14.466420+00:00",
+      "calories": 450,
+      "organism": "org-001",
+      "output_file": "G:\\codefarm\\organisms\\org-001\\output\\ansible_improvement_20260517-002714.yml",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-001-harden_security-20260517-002714-7580",
+        "snapshot": "G:\\codefarm\\snapshots\\org-001-harden_security-20260517-002714-7580\\core\\ansible\\site.yml",
+        "status": "promoted",
+        "target": "G:\\codefarm\\core\\ansible\\site.yml"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-001-harden_security-20260517-002714-7580",
+      "subsystem": "ansible",
+      "task": "harden_security",
+      "verified": true
+    },
+    {
+      "at": "2026-05-17T00:27:15.573765+00:00",
+      "calories": 600,
+      "organism": "org-002",
+      "output_file": "G:\\codefarm\\organisms\\org-002\\output\\terraform_improvement_20260517-002714.tf",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-002-provision_vm-20260517-002714-9177",
+        "snapshot": "G:\\codefarm\\snapshots\\org-002-provision_vm-20260517-002714-9177\\core\\terraform\\main.tf",
+        "status": "promoted",
+        "target": "G:\\codefarm\\core\\terraform\\main.tf"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-002-provision_vm-20260517-002714-9177",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    },
+    {
+      "at": "2026-05-17T00:27:16.020898+00:00",
+      "calories": 475,
+      "organism": "org-003",
+      "output_file": "G:\\codefarm\\organisms\\org-003\\output\\digest_improvement_20260517-002715.py",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-003-improve_digest-20260517-002715-1093",
+        "snapshot": "G:\\codefarm\\snapshots\\org-003-improve_digest-20260517-002715-1093\\digestive-engine\\infrastructure_digest_helpers.py",
+        "status": "promoted",
+        "target": "G:\\codefarm\\digestive-engine\\infrastructure_digest_helpers.py"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-003-improve_digest-20260517-002715-1093",
+      "subsystem": "digestive-engine",
+      "task": "improve_digest",
+      "verified": true
+    },
+    {
+      "at": "2026-05-17T00:27:16.536226+00:00",
+      "calories": 600,
+      "organism": "org-004",
+      "output_file": "G:\\codefarm\\organisms\\org-004\\output\\terraform_improvement_20260517-002716.tf",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-004-provision_vm-20260517-002716-1122",
+        "snapshot": "G:\\codefarm\\snapshots\\org-004-provision_vm-20260517-002716-1122\\core\\terraform\\main.tf",
+        "status": "promoted",
+        "target": "G:\\codefarm\\core\\terraform\\main.tf"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-004-provision_vm-20260517-002716-1122",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    },
+    {
+      "at": "2026-05-17T00:27:17.426199+00:00",
+      "calories": 600,
+      "organism": "org-005",
+      "output_file": "G:\\codefarm\\organisms\\org-005\\output\\terraform_improvement_20260517-002716.tf",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-005-provision_vm-20260517-002716-7673",
+        "snapshot": "G:\\codefarm\\snapshots\\org-005-provision_vm-20260517-002716-7673\\core\\terraform\\main.tf",
+        "status": "promoted",
+        "target": "G:\\codefarm\\core\\terraform\\main.tf"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-005-provision_vm-20260517-002716-7673",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    },
+    {
+      "at": "2026-05-17T00:27:17.893506+00:00",
+      "calories": 600,
+      "organism": "org-006",
+      "output_file": "G:\\codefarm\\organisms\\org-006\\output\\terraform_improvement_20260517-002717.tf",
+      "promotion": {
+        "path": "G:\\codefarm\\proposals\\promoted\\org-006-provision_vm-20260517-002717-3350",
+        "snapshot": "G:\\codefarm\\snapshots\\org-006-provision_vm-20260517-002717-3350\\core\\terraform\\main.tf",
+        "status": "promoted",
+        "target": "G:\\codefarm\\core\\terraform\\main.tf"
+      },
+      "proposal_path": "G:\\codefarm\\proposals\\pending\\org-006-provision_vm-20260517-002717-3350",
+      "subsystem": "terraform",
+      "task": "provision_vm",
+      "verified": true
+    }
+  ],
+  "metrics": {
+    "births_24h": 7,
+    "deaths_24h": 0,
+    "lifetime_births": 7,
+    "lifetime_deaths": 0,
+    "lifetime_nutrients": 20335,
+    "quality_history": [
+      {
+        "at": "2026-05-16T15:01:18.060688+00:00",
+        "organism": "org-001",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T15:03:05.401452+00:00",
+        "organism": "org-001",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T15:03:05.661590+00:00",
+        "organism": "org-002",
+        "quality": 100.0
+      },
+      {
+        "organism": "test-org",
+        "quality": 46.0
+      },
+      {
+        "at": "2026-05-16T15:23:14.420359+00:00",
+        "organism": "org-001",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T15:23:14.617090+00:00",
+        "organism": "org-002",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T15:23:14.810621+00:00",
+        "organism": "org-003",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T15:23:47.768761+00:00",
+        "organism": "org-001",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T15:23:47.961886+00:00",
+        "organism": "org-002",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T15:23:48.190554+00:00",
+        "organism": "org-003",
+        "quality": 100.0
+      },
+      {
+        "at": "2026-05-16T17:13:58.357138+00:00",
+        "organism": "org-001",
+        "quality": 100,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-16T17:13:58.438210+00:00",
+        "organism": "org-002",
+        "quality": 100,
+        "subsystem": "ansible"
+      },
+      {
+        "at": "2026-05-16T17:13:58.510297+00:00",
+        "organism": "org-003",
+        "quality": 100,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-16T17:15:33.065223+00:00",
+        "organism": "org-001",
+        "quality": 100,
+        "subsystem": "digestive-engine"
+      },
+      {
+        "at": "2026-05-16T17:15:33.124193+00:00",
+        "organism": "org-002",
+        "quality": 100,
+        "subsystem": "ansible"
+      },
+      {
+        "at": "2026-05-16T17:15:33.335042+00:00",
+        "organism": "org-003",
+        "quality": 100,
+        "subsystem": "digestive-engine"
+      },
+      {
+        "at": "2026-05-16T18:38:42.016053+00:00",
+        "organism": "org-001",
+        "quality": 100,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-16T18:38:42.350808+00:00",
+        "organism": "org-002",
+        "quality": 100,
+        "subsystem": "ansible"
+      },
+      {
+        "at": "2026-05-16T18:38:42.547722+00:00",
+        "organism": "org-003",
+        "quality": 100,
+        "subsystem": "digestive-engine"
+      },
+      {
+        "at": "2026-05-16T21:19:24.305963+00:00",
+        "organism": "org-001",
+        "quality": 100,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-16T21:19:24.399083+00:00",
+        "organism": "org-002",
+        "quality": 100,
+        "subsystem": "genome-bank"
+      },
+      {
+        "at": "2026-05-16T21:19:24.673078+00:00",
+        "organism": "org-003",
+        "quality": 100,
+        "subsystem": "digestive-engine"
+      },
+      {
+        "at": "2026-05-16T21:19:25.154024+00:00",
+        "organism": "org-004",
+        "quality": 100,
+        "subsystem": "ansible"
+      },
+      {
+        "at": "2026-05-16T21:45:55.207343+00:00",
+        "organism": "org-001",
+        "quality": 25,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-16T21:45:55.376593+00:00",
+        "organism": "org-002",
+        "quality": 100,
+        "subsystem": "ansible"
+      },
+      {
+        "at": "2026-05-16T21:45:55.800660+00:00",
+        "organism": "org-003",
+        "quality": 100,
+        "subsystem": "digestive-engine"
+      },
+      {
+        "at": "2026-05-16T21:45:56.125748+00:00",
+        "organism": "org-004",
+        "quality": 25,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-16T21:45:56.481881+00:00",
+        "organism": "org-005",
+        "quality": 25,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-17T00:27:14.466420+00:00",
+        "organism": "org-001",
+        "quality": 100,
+        "subsystem": "ansible"
+      },
+      {
+        "at": "2026-05-17T00:27:15.573765+00:00",
+        "organism": "org-002",
+        "quality": 100,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-17T00:27:16.020898+00:00",
+        "organism": "org-003",
+        "quality": 100,
+        "subsystem": "digestive-engine"
+      },
+      {
+        "at": "2026-05-17T00:27:16.536226+00:00",
+        "organism": "org-004",
+        "quality": 100,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-17T00:27:17.426199+00:00",
+        "organism": "org-005",
+        "quality": 100,
+        "subsystem": "terraform"
+      },
+      {
+        "at": "2026-05-17T00:27:17.893506+00:00",
+        "organism": "org-006",
+        "quality": 100,
+        "subsystem": "terraform"
+      }
+    ]
+  },
+  "name": "CodeFarm",
+  "nutrient_pool": {
+    "available": 21135,
+    "available_calories": 21135,
+    "consumed_calories": 0,
+    "revenue_per_action": 0.1,
+    "spawn_cost": 150
+  },
+  "organisms": {
+    "org-001": {
+      "birth_at": "2026-05-16T15:01:17.801774+00:00",
+      "consecutive_low_quality_outputs": 0,
+      "energy": 7321,
+      "energy_decay_per_cycle": 8,
+      "genome": {
+        "energy_decay_per_cycle": 8,
+        "genome_id": "base-genome",
+        "grace_period_seconds": 300,
+        "llm_provider": "simulated-local",
+        "reproduction_threshold": 900,
+        "self_test": true,
+        "spawn_cost": 500,
+        "starvation_threshold": 120,
+        "strain": "base",
+        "task_complexity_preference": "easy",
+        "temperature": 0.2,
+        "test_strictness": 0.85
+      },
+      "id": "org-001",
+      "last_customer_value": "New web server for client website",
+      "last_output": "G:\\codefarm\\organisms\\org-001\\output\\ansible_improvement_20260517-002714.yml",
+      "last_promotion": "promoted",
+      "last_proposal": "G:\\codefarm\\proposals\\pending\\org-001-harden_security-20260517-002714-7580",
+      "last_quality": 100,
+      "last_subsystem": "ansible",
+      "last_task": "harden_security",
+      "lifetime_nutrients": 7325,
+      "reproduction_threshold": 900,
+      "specialization": "provisioner",
+      "starvation_threshold": 120,
+      "status": "self_building",
+      "tenant": "demo",
+      "updated_at": "2026-05-17T00:27:14.464440+00:00"
+    },
+    "org-002": {
+      "birth_at": "2026-05-16T15:01:18.091439+00:00",
+      "consecutive_low_quality_outputs": 0,
+      "energy": 6029,
+      "energy_decay_per_cycle": 8,
+      "genome": {
+        "energy_decay_per_cycle": 8,
+        "genome_id": "base-genome",
+        "grace_period_seconds": 300,
+        "llm_provider": "simulated-local",
+        "reproduction_threshold": 900,
+        "self_test": true,
+        "spawn_cost": 500,
+        "starvation_threshold": 120,
+        "strain": "base-mutant",
+        "task_complexity_preference": "easy",
+        "temperature": 0.158,
+        "test_strictness": 0.85
+      },
+      "id": "org-002",
+      "last_customer_value": "Customer web tier is ready for container orchestration",
+      "last_output": "G:\\codefarm\\organisms\\org-002\\output\\terraform_improvement_20260517-002714.tf",
+      "last_promotion": "promoted",
+      "last_proposal": "G:\\codefarm\\proposals\\pending\\org-002-provision_vm-20260517-002714-9177",
+      "last_quality": 100,
+      "last_subsystem": "terraform",
+      "last_task": "provision_vm",
+      "lifetime_nutrients": 6025,
+      "reproduction_threshold": 900,
+      "specialization": "platform",
+      "starvation_threshold": 120,
+      "status": "self_building",
+      "tenant": "demo",
+      "updated_at": "2026-05-17T00:27:15.571785+00:00"
+    },
+    "org-003": {
+      "birth_at": "2026-05-16T15:03:05.447087+00:00",
+      "consecutive_low_quality_outputs": 0,
+      "energy": 5687,
+      "energy_decay_per_cycle": 8,
+      "genome": {
+        "energy_decay_per_cycle": 8,
+        "genome_id": "base-genome",
+        "grace_period_seconds": 300,
+        "llm_provider": "simulated-local",
+        "reproduction_threshold": 900,
+        "self_test": true,
+        "spawn_cost": 500,
+        "starvation_threshold": 120,
+        "strain": "base-mutant",
+        "task_complexity_preference": "easy",
+        "temperature": 0.19,
+        "test_strictness": 0.85
+      },
+      "id": "org-003",
+      "last_customer_value": "SOC2 compliance requirement",
+      "last_output": "G:\\codefarm\\organisms\\org-003\\output\\digest_improvement_20260517-002715.py",
+      "last_promotion": "promoted",
+      "last_proposal": "G:\\codefarm\\proposals\\pending\\org-003-improve_digest-20260517-002715-1093",
+      "last_quality": 100,
+      "last_subsystem": "digestive-engine",
+      "last_task": "improve_digest",
+      "lifetime_nutrients": 5675,
+      "reproduction_threshold": 900,
+      "specialization": "security",
+      "starvation_threshold": 120,
+      "status": "self_building",
+      "tenant": "demo",
+      "updated_at": "2026-05-17T00:27:16.018898+00:00"
+    },
+    "org-004": {
+      "birth_at": "2026-05-16T18:38:42.574597+00:00",
+      "consecutive_low_quality_outputs": 0,
+      "energy": 1114,
+      "id": "org-004",
+      "last_output": "G:\\codefarm\\organisms\\org-004\\output\\terraform_improvement_20260517-002716.tf",
+      "last_promotion": "promoted",
+      "last_proposal": "G:\\codefarm\\proposals\\pending\\org-004-provision_vm-20260517-002716-1122",
+      "last_quality": 100,
+      "last_subsystem": "terraform",
+      "last_task": "provision_vm",
+      "lifetime_nutrients": 1050,
+      "parent": "org-001",
+      "specialization": "terraform",
+      "status": "self_building",
+      "updated_at": "2026-05-17T00:27:16.534567+00:00"
+    },
+    "org-005": {
+      "birth_at": "2026-05-16T21:19:25.233187+00:00",
+      "consecutive_low_quality_outputs": 0,
+      "energy": 676,
+      "id": "org-005",
+      "last_output": "G:\\codefarm\\organisms\\org-005\\output\\terraform_improvement_20260517-002716.tf",
+      "last_promotion": "promoted",
+      "last_proposal": "G:\\codefarm\\proposals\\pending\\org-005-provision_vm-20260517-002716-7673",
+      "last_quality": 100,
+      "last_subsystem": "terraform",
+      "last_task": "provision_vm",
+      "lifetime_nutrients": 600,
+      "parent": "org-001",
+      "specialization": "terraform",
+      "status": "self_building",
+      "updated_at": "2026-05-17T00:27:17.425243+00:00"
+    },
+    "org-006": {
+      "birth_at": "2026-05-16T21:45:56.507875+00:00",
+      "consecutive_low_quality_outputs": 0,
+      "energy": 688,
+      "id": "org-006",
+      "last_output": "G:\\codefarm\\organisms\\org-006\\output\\terraform_improvement_20260517-002717.tf",
+      "last_promotion": "promoted",
+      "last_proposal": "G:\\codefarm\\proposals\\pending\\org-006-provision_vm-20260517-002717-3350",
+      "last_quality": 100,
+      "last_subsystem": "terraform",
+      "last_task": "provision_vm",
+      "lifetime_nutrients": 600,
+      "parent": "org-001",
+      "specialization": "terraform",
+      "status": "self_building",
+      "updated_at": "2026-05-17T00:27:17.891520+00:00"
+    },
+    "org-007": {
+      "birth_at": "2026-05-17T00:27:17.968297+00:00",
+      "consecutive_low_quality_outputs": 0,
+      "energy": 100,
+      "id": "org-007",
+      "lifetime_nutrients": 0,
+      "parent": "org-001",
+      "specialization": "terraform",
+      "status": "born_agent",
+      "updated_at": "2026-05-17T00:27:17.968297+00:00"
+    },
+    "test-org": {
+      "consecutive_low_quality_outputs": 0,
+      "energy": 460,
+      "id": "test-org",
+      "last_output": "G:\\codefarm\\organisms\\test-org\\output\\test.py",
+      "last_quality": 46.0,
+      "lifetime_nutrients": 460,
+      "status": "thriving"
+    }
+  },
+  "population": {
+    "active": 7,
+    "max": 10,
+    "specializations": {
+      "ansible": 1,
+      "digestive-engine": 1,
+      "terraform": 5
+    }
+  },
+  "status": "self_building",
+  "task_queue": [
+    {
+      "description": "Write Terraform to provision a new organism VM",
+      "id": "provision_vm",
+      "reward": 500,
+      "subsystem": "terraform",
+      "verification": "terraform plan succeeds or deterministic dry-run validates module syntax"
+    },
+    {
+      "description": "Add Ansible tasks to harden SSH and firewall",
+      "id": "harden_security",
+      "reward": 300,
+      "subsystem": "ansible",
+      "verification": "ansible syntax check or YAML structure validation passes"
+    },
+    {
+      "description": "Optimize digestive engine infrastructure analysis",
+      "id": "improve_digest",
+      "reward": 400,
+      "subsystem": "digestive-engine",
+      "verification": "digest module compiles and benchmark artifact improves analysis metadata"
+    },
+    {
+      "description": "Add new panel to observatory dashboard",
+      "id": "extend_monitoring",
+      "reward": 250,
+      "subsystem": "observatory",
+      "verification": "dashboard contains the new panel marker and UI snapshot regenerates"
+    },
+    {
+      "description": "Write a better base genome with improved metabolism",
+      "id": "evolve_genome",
+      "reward": 600,
+      "subsystem": "genome-bank",
+      "verification": "new genome file validates and contains specialization traits"
+    }
+  ],
+  "tenant_id": "codefarm-internal",
+  "tenant_task_indexes": {
+    "demo:org-001": 0,
+    "demo:org-002": 0,
+    "demo:org-003": 0
+  },
+  "updated_at": "2026-05-16T15:23:48.190554+00:00",
+  "version": "3.1-proposal-promotion"
+}

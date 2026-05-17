@@ -1,0 +1,16 @@
+{
+  "tenant": "demo",
+  "specialization": "security",
+  "allowed_subsystems": ["ansible"],
+  "task_queue": [
+    {
+      "id": "harden-ssh",
+      "type": "ansible",
+      "target": "demo",
+      "playbook": "security/ssh-hardening.yml",
+      "verify": "ansible_artifact",
+      "reward": 300,
+      "customer_value": "SOC2 compliance requirement"
+    }
+  ]
+}

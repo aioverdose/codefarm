@@ -1,0 +1,56 @@
+---
+- name: CodeFarm organism baseline
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Verify CodeFarm path exists
+      ansible.builtin.debug:
+        msg: "CodeFarm baseline loaded"
+
+    # Added by org-002 at 2026-05-16T17:13:58.405524+00:00
+    - name: Harden SSH configuration
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+      tags: security
+
+    # Added by org-002 at 2026-05-16T17:15:33.087978+00:00
+    - name: Harden SSH configuration
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+      tags: security
+
+    # Added by org-002 at 2026-05-16T18:38:42.151393+00:00
+    - name: Harden SSH configuration
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+      tags: security
+
+    # Added by org-004 at 2026-05-16T21:19:24.754895+00:00
+    - name: Harden SSH configuration
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+      tags: security
+
+    # Proposed by org-002 at 2026-05-16T21:45:55.267973+00:00
+    - name: Harden SSH configuration
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+      tags: security
+
+    # Proposed by org-001 at 2026-05-17T00:27:14.397066+00:00
+    - name: Harden SSH configuration
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+      tags: security
