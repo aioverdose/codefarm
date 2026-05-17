@@ -1,14 +1,29 @@
 # CodeFarm
 
-A local simulated autonomous infrastructure ecosystem rooted at `G:\codefarm`.
+CodeFarm is a local self-building infrastructure ecosystem rooted at `G:\codefarm`.
 
-Run a Genesis/Sustain cycle:
+Organisms are agent-like workers with specializations such as Terraform, Ansible, and digestive-engine analysis. They survive by proposing improvements to CodeFarm itself. The orchestrator verifies each proposal, promotes verified changes with snapshots, quarantines failed proposals, awards nutrients, and breeds successful organisms.
 
-```powershell
-$env:CODEFARM_ROOT = 'G:\codefarm'
-python G:\codefarm\overmind.py cycle
+## Run
+
+```bat
+G:\codefarm\tools\env.bat
+G:\codefarm\orchestrator.bat agent-genesis
+G:\codefarm\observatory.bat
 ```
 
-The first cycle spawns `org-001`, generates code for the pending JSON parser task, digests it into nutrients, updates `state.json`, and writes observatory metrics.
+The observatory UI is generated at:
 
-All runtime files, logs, tasks, outputs, state, and placeholders are under `G:\codefarm`.
+```text
+G:\codefarm\observatory\ui\index.html
+```
+
+## Safety Model
+
+Organisms do not write directly into live subsystems. They write proposals under:
+
+```text
+G:\codefarm\proposals\pending
+```
+
+Verified proposals move to `proposals\promoted`, failed proposals move to `proposals\quarantine`, and live targets are snapshotted under `snapshots` before promotion.
