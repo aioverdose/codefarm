@@ -1,0 +1,24 @@
+{
+  "name": "local-agent-app-factory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A sandboxed Next.js shell for CodeFarm local autonomous app-building agents.",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "codefarm": "node scripts/start-codefarm.mjs",
+    "dev:all": "node scripts/start-codefarm.mjs && next dev -p 3000"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0"
+  }
+}
